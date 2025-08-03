@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import giftGif from './assets/gift.gif';
-import frd from "./assets/frd.mp4";
+
 function App() {
   const [step, setStep] = useState(0);
 
