@@ -1,0 +1,107 @@
+/* Base reset */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #ffe4e1;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Common full-screen center layout */
+.fullscreen-center {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Box screen */
+.box-screen {
+  background-color: #ffe4e1;
+}
+
+.gift-box {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+.click-text {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+/* Wish screen */
+.wish-screen {
+  
+  font-size: 2rem;
+  color: #ff69b4;
+  padding: 20px;
+}
+
+/* Video screen */
+
+
+.video {
+  width: 90%;
+  max-width: 1000px;
+  margin-top: 20px;
+  border-radius: 10px;
+  height:300px;
+}
+
+/* Buttons */
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff1493;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+/* Wish Card Styling */
+.wish-card {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background: linear-gradient(135deg, #fff0f5, #ffe4e1);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+  border: 2px solid #ffc0cb;
+  overflow-y: auto;
+  max-height: 90vh;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.wish-card p {
+  margin: 0;
+  font-size: 1.4rem;
+  word-wrap: break-word;
+}
